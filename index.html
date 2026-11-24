@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daybreak Business Works | Sales, Hiring and Growth Support for Napa, Sonoma and Contra Costa</title>
+<meta name="description" content="Practical sales, business development, hiring and AI support for owners and healthcare teams in Napa, Sonoma and Contra Costa counties. Start with a free 30 minute call.">
+<style>
+  :root{
+    --ink:#1f2a37; --muted:#5b6675; --sand:#faf6ef; --card:#ffffff;
+    --sun:#F0B429; --sun-dark:#8a6208; --deep:#14213D; --sky:#8CC4EA; --mist:#e6f2fb; --line:#e3ddd0; --gray:#C4C8CE;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--sand);line-height:1.65;font-size:18px}
+  h1,h2,h3,.btn,nav,.eyebrow,.tag,.num{font-family:"Helvetica Neue",Arial,sans-serif}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  header{padding:14px 0;background:var(--deep);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .brand{display:block;line-height:0}
+  .brand img{height:50px;width:auto}
+  nav{display:flex;align-items:center;gap:22px}
+  nav a{color:#c5d3e0;text-decoration:none;font-size:15px}
+  nav a:hover{color:var(--sun)}
+  nav a.navbtn{background:var(--sun);color:var(--deep);font-weight:700;padding:9px 16px;border-radius:7px}
+  nav a.navbtn:hover{background:#d99a12;color:var(--deep)}
+  .hero{background:linear-gradient(180deg,var(--mist) 0%,var(--sand) 100%);padding:76px 0 56px}
+  .eyebrow{color:var(--sun-dark);text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;margin:0 0 14px}
+  h1{font-size:clamp(32px,5vw,48px);line-height:1.14;margin:0 0 20px;color:var(--deep);max-width:820px}
+  .lead{font-size:20px;color:var(--muted);max-width:700px;margin:0 0 30px}
+  .btn{display:inline-block;background:var(--sun);color:var(--deep);text-decoration:none;font-weight:700;padding:15px 28px;border-radius:8px;font-size:16px;transition:background .15s}
+  .btn:hover{background:#d99a12}
+  .btn.alt{background:transparent;color:var(--deep);border:2px solid var(--deep);margin-left:10px;padding:13px 26px}
+  .btn.alt:hover{background:var(--deep);color:#fff}
+  section{padding:64px 0}
+  h2{font-size:30px;color:var(--deep);margin:0 0 12px;line-height:1.2}
+  .sub{color:var(--muted);margin:0 0 36px;max-width:700px}
+  .proof{background:var(--deep);padding:36px 0}
+  .proofgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+  .stat{border-left:3px solid var(--sun);padding-left:16px}
+  .stat strong{display:block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:26px;color:#fff;line-height:1.2}
+  .stat span{color:#c5d3e0;font-size:15px;line-height:1.4;display:block;margin-top:4px}
+  .ladder{display:grid;gap:18px}
+  .rung{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px 28px;display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start}
+  .num{width:48px;height:48px;border-radius:50%;background:var(--sun);color:var(--deep);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
+  .rung:nth-child(2) .num{background:#e2c46a}
+  .rung h3{margin:0 0 2px;font-size:22px;color:var(--deep)}
+  .tag{font-size:13px;color:var(--sun-dark);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin:0 0 10px}
+  .rung p{margin:0 0 10px;color:var(--ink)}
+  .rung ul{margin:0;padding-left:20px;color:var(--muted)}
+  .rung li{margin-bottom:4px}
+  .note{margin-top:22px;color:var(--muted);font-size:16px}
+  .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .card h3{margin:0 0 6px;font-size:19px;color:var(--deep)}
+  .card p{margin:0;color:var(--muted);font-size:17px}
+  .mist{background:var(--mist)}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;counter-reset:s}
+  .step{counter-increment:s}
+  .step::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--deep);color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;margin-bottom:12px}
+  .step h3{margin:0 0 4px;font-size:19px;color:var(--deep)}
+  .step p{margin:0;color:var(--muted);font-size:17px}
+  .results{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .res{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--sky);border-radius:10px;padding:20px 22px}
+  .res strong{font-family:"Helvetica Neue",Arial,sans-serif;color:var(--deep);display:block;margin-bottom:4px}
+  .res span{color:var(--muted);font-size:17px}
+  .about{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start}
+  .creds{background:var(--deep);color:#eaf0f6;border-radius:12px;padding:26px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:16px}
+  .creds h3{margin:0 0 12px;color:#fff;font-size:18px}
+  .creds ul{margin:0;padding-left:18px}
+  .creds li{margin-bottom:8px}
+  .cta{text-align:center;background:var(--deep);color:#eaf0f6}
+  .cta h2{color:#fff}
+  .cta p{max-width:600px;margin:0 auto 26px;color:#c5d3e0}
+  .cta a.mail{color:var(--sky)}
+  footer{padding:30px 0;color:var(--muted);font-size:15px;text-align:center}
+  @media (max-width:760px){nav a:not(.navbtn){display:none}.about{grid-template-columns:1fr}.btn.alt{margin:12px 0 0}.rung{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="top">
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="daybreak-logo.svg" alt="Daybreak Business Works" width="248" height="50"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#about">About</a>
+      <a class="navbtn" href="CALENDLY_LINK_HERE">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Napa, Sonoma and Contra Costa counties</p>
+      <h1>A steadier path to more sales, for businesses in Napa, Sonoma and Contra Costa.</h1>
+      <p class="lead">I help owners and healthcare teams tighten their sales and business development process, hire the right people, and put simple AI tools to work. Clear scope, fixed prices, plain language.</p>
+      <a class="btn" href="CALENDLY_LINK_HERE">Book a free 30 minute call</a>
+      <a class="btn alt" href="#services">See how I can help</a>
+    </div>
+  </div>
+
+  <div class="proof">
+    <div class="wrap">
+      <div class="proofgrid">
+        <div class="stat"><strong>670 to 900+</strong><span>Home health census in 18 months</span></div>
+        <div class="stat"><strong>31% to 55%</strong><span>Hospital partnership placement rate</span></div>
+        <div class="stat"><strong>44 contracts</strong><span>Signed in 4 years, 122% of goal</span></div>
+        <div class="stat"><strong>12 labs</strong><span>Scaled across two states in 8 years</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Four ways to work together</h2>
+      <p class="sub">For owners and managers who know their sales or referrals could be stronger but do not have time to fix them. Start small, or go deeper when you are ready. Each level has a clear scope and a fixed price.</p>
+      <div class="ladder">
+        <div class="rung">
+          <div class="num">1</div>
+          <div>
+            <p class="tag">Small projects</p>
+            <h3>Quick wins that save time</h3>
+            <p>Practical fixes you can use right away, built around how your team already works.</p>
+            <ul>
+              <li>Spreadsheets and simple trackers to replace paper lists and messy files</li>
+              <li>Customer follow up routines so no one goes quiet</li>
+              <li>Workflow cleanup for ordering, scheduling and handoffs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rung">
+          <div class="num">2</div>
+          <div>
+            <p class="tag">2 weeks</p>
+            <h3>Growth Snapshot</h3>
+            <p>An honest look at how business comes in today, and a simple 90 day plan to improve it.</p>
+            <ul>
+              <li>Sales and referral process review: where leads come from and where they stall</li>
+              <li>The three fixes that matter most</li>
+              <li>A 90 day growth plan with clear targets and weekly habits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rung">
+          <div class="num">3</div>
+          <div>
+            <p class="tag">4 weeks</p>
+            <h3>Team and Hiring Review</h3>
+            <p>Know who is performing, who needs coaching, and how to hire the next person well.</p>
+            <ul>
+              <li>A fair look at current sales or BD performance, then one-on-one coaching</li>
+              <li>Role scorecards and interview questions for your next hire</li>
+              <li>A first 90 days onboarding plan</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rung">
+          <div class="num">4</div>
+          <div>
+            <p class="tag">Ongoing</p>
+            <h3>Fractional BD Lead</h3>
+            <p>A senior business development leader on your team part time, without a full-time salary.</p>
+            <ul>
+              <li>Weekly pipeline and referral reviews, coaching and accountability</li>
+              <li>AI tools for pipeline tracking, referral dashboards and forecasting</li>
+              <li>A regular check-in to adjust the plan as your business changes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="note">Not sure where to start? A free 30 minute call is the easiest first step. I will tell you honestly which level fits, or whether you need me at all.</p>
+    </div>
+  </section>
+
+  <section class="mist">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="sub">Simple and low pressure.</p>
+      <div class="steps">
+        <div class="step"><h3>Talk</h3><p>A free 30 minute call to hear what is going on.</p></div>
+        <div class="step"><h3>Look</h3><p>A quick review of your numbers and process.</p></div>
+        <div class="step"><h3>Plan</h3><p>A fixed-price proposal with a clear scope.</p></div>
+        <div class="step"><h3>Build and coach</h3><p>We put the plan to work together.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="wrap">
+      <h2>Results from my career</h2>
+      <p class="sub">Twenty five years of growing healthcare and service businesses through referrals, partnerships and well-coached teams.</p>
+      <div class="results">
+        <div class="res"><strong>Muir Home Health</strong><span>Grew census from 670 to 900+ and raised the hospital JV placement rate from 31% to 55%, both in 18 months.</span></div>
+        <div class="res"><strong>Curant Health</strong><span>Signed 44 new contracts in 4 years against a rising goal, 122% of goal.</span></div>
+        <div class="res"><strong>Amedisys</strong><span>Led 17 reps and grew admissions 30% in two years, 150% of goal.</span></div>
+        <div class="res"><strong>Vessel Health Services</strong><span>Built a startup to profitability, 117% of growth goal over 3 years.</span></div>
+        <div class="res"><strong>FusionSleep</strong><span>Expanded one site into three locations in 5 years.</span></div>
+        <div class="res"><strong>Complete Health Sleep Diagnostics</strong><span>Co-founded and scaled to 12 labs across two states.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="mist">
+    <div class="wrap about">
+      <div>
+        <h2>About Brian</h2>
+        <p>I have spent 25+ years helping healthcare and service businesses grow through referrals, partnerships and well-coached teams. I am a Dale Carnegie certified sales training instructor, and I use AI to build the dashboards, forecasts and training programs that make good habits stick.</p>
+        <p>I live in Sonoma and work one-on-one with owners. When you need something outside my lane, like accounting or social media, I bring in trusted specialists.</p>
+      </div>
+      <div class="creds">
+        <h3>At a glance</h3>
+        <ul>
+          <li>25+ years in healthcare business development</li>
+          <li>Founded three healthcare companies</li>
+          <li>Dale Carnegie certified sales training instructor</li>
+          <li>Based in Sonoma, serving Napa, Sonoma and Contra Costa, and remote nationwide</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta">
+    <div class="wrap">
+      <h2>Ready to see what a few focused changes could do?</h2>
+      <p>Book a free 30 minute call. No pressure, just a straight conversation about where you are and what could help.</p>
+      <a class="btn" href="CALENDLY_LINK_HERE">Book a free 30 minute call</a>
+      <p style="margin-top:22px;font-size:16px">Prefer email? <a class="mail" href="mailto:EMAIL_HERE">EMAIL_HERE</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; 2026 Daybreak Business Works &middot; Sonoma, CA &middot; Serving Napa, Sonoma and Contra Costa counties, and remote nationwide
+  </div>
+</footer>
+
+</body>
+</html>
