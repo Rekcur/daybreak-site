@@ -64,7 +64,13 @@
   .res{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--sky);border-radius:10px;padding:20px 22px}
   .res strong{font-family:"Helvetica Neue",Arial,sans-serif;color:var(--deep);display:block;margin-bottom:4px}
   .res span{color:var(--muted);font-size:17px}
-  .about{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start}
+  .about{display:grid;grid-template-columns:1.75fr 1fr;gap:36px;align-items:center;margin-top:22px}
+  .bio{display:flex;align-items:center;gap:28px}
+  .bio-text{flex:1;min-width:0}
+  .headshot{flex:none;width:240px;height:300px;object-fit:cover;object-position:center top;border-radius:12px;box-shadow:0 6px 20px rgba(20,33,61,.18)}
+  .bio p{margin:0 0 16px}
+  .bio p:first-child{margin-top:0}
+  .bio p:last-child{margin-bottom:0}
   .creds{background:var(--deep);color:#eaf0f6;border-radius:12px;padding:26px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:16px}
   .creds h3{margin:0 0 12px;color:#fff;font-size:18px}
   .creds ul{margin:0;padding-left:18px}
@@ -74,7 +80,7 @@
   .cta p{max-width:600px;margin:0 auto 26px;color:#c5d3e0}
   .cta a.mail{color:var(--sky)}
   footer{padding:30px 0;color:var(--muted);font-size:15px;text-align:center}
-  @media (max-width:760px){nav a:not(.navbtn){display:none}.about{grid-template-columns:1fr}.btn.alt{margin:12px 0 0}.rung{grid-template-columns:1fr}}
+  @media (max-width:760px){nav a:not(.navbtn){display:none}.about{grid-template-columns:1fr;align-items:start}.bio{display:block}.headshot{display:block;width:100%;height:auto;aspect-ratio:4/5;margin:0 0 28px;object-position:center top}.btn.alt{margin:12px 0 0}.rung{grid-template-columns:1fr}}
 </style>
 </head>
 <body id="top">
@@ -204,20 +210,25 @@
   </section>
 
   <section id="about" class="mist">
-    <div class="wrap about">
-      <div>
-        <h2>About Brian</h2>
-        <p>I have spent 25+ years helping healthcare and service businesses grow through referrals, partnerships and well-coached teams. I am a Dale Carnegie certified sales training instructor, and I use AI to build the dashboards, forecasts and training programs that make good habits stick.</p>
-        <p>I live in Sonoma and work one-on-one with owners. When you need something outside my lane, like accounting or social media, I bring in trusted specialists.</p>
-      </div>
-      <div class="creds">
-        <h3>At a glance</h3>
-        <ul>
-          <li>25+ years in healthcare business development</li>
-          <li>Founded three healthcare companies</li>
-          <li>Dale Carnegie certified sales training instructor</li>
-          <li>Based in Sonoma, serving Napa, Sonoma and Contra Costa, and remote nationwide</li>
-        </ul>
+    <div class="wrap">
+      <h2>About Brian</h2>
+      <div class="about">
+        <div class="bio">
+          <img class="headshot" src="brian-rucker-headshot.jpg" alt="Brian Rucker, founder of Daybreak Business Works" width="190" height="238">
+          <div class="bio-text">
+          <p>I have spent 25+ years helping healthcare and service businesses grow through referrals, partnerships and well-coached teams. I am a Dale Carnegie certified sales training instructor, and I use AI to build the dashboards, forecasts and training programs that make good habits stick.</p>
+          <p>I live in Sonoma and work one-on-one with owners. When you need something outside my lane, like accounting or social media, I bring in trusted specialists.</p>
+          </div>
+        </div>
+        <div class="creds">
+          <h3>At a glance</h3>
+          <ul>
+            <li>25+ years in healthcare business development</li>
+            <li>Founded three healthcare companies</li>
+            <li>Dale Carnegie certified sales training instructor</li>
+            <li>Based in Sonoma, serving Napa, Sonoma and Contra Costa, and remote nationwide</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
